@@ -1,0 +1,35 @@
+# Schema example for scripts/generate_docx.py's `cover-letter` mode.
+# /apply writes one of these per application to applications/<slug>/cover_letter.yaml.
+# `contact` mirrors profile/profile.yaml's contact block. `body_paragraphs` should
+# follow the structure and tone documented in profile/cover_letter_voice.md.
+
+contact:
+  name: Jane Example
+  location: Vancouver, BC
+  phone: 604-555-0100
+  email: jane.example@email.com
+  linkedin: linkedin.com/in/jane-example
+
+date: "July 18, 2026"
+
+recipient: |
+  Hiring Manager
+  Example Company
+
+salutation: "Dear Hiring Manager,"
+
+body_paragraphs:
+  - >
+    Opening paragraph: role + company name, years of experience, one line of
+    genuine (specific) interest in the company.
+  - >
+    Track record paragraph: 2-3 sentences on breadth of relevant experience,
+    pitched at the target role's level.
+  - >
+    Why-this-company paragraph — MUST change per application. Name a specific
+    product/technology/mission detail confirmed in the posting or company site.
+  - >
+    Working style paragraph: analytical mindset, attention to detail, clear
+    communication, enjoys learning new tech.
+  - >
+    Closing paragraph: thank them, express willingness to discuss further.

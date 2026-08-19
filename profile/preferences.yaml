@@ -1,0 +1,68 @@
+# Job search targeting criteria. /scrape and /apply use this to decide what
+# counts as a viable match before spending effort on a full fit evaluation.
+
+target_roles:
+  - QA Automation Engineer
+  - SDET (Software Development Engineer in Test)
+  - Test Automation Engineer / Test Automation Specialist
+  - QA Engineer (Junior / Intermediate / Senior)
+  - Quality Assurance Analyst (Junior / Intermediate / Senior)
+  - Manual QA Tester / Manual QA Analyst
+  - QA Team Lead / QA Lead
+
+locations:
+  primary: Vancouver, BC, Canada
+  accepted:
+    - Vancouver, BC (on-site / hybrid)
+    - Remote - Canada
+    - Remote - US (only if explicitly open to candidates working from Canada)
+  rejected:
+    - On-site roles outside the Vancouver / Lower Mainland area
+    - US on-site roles requiring US work authorization or relocation
+
+work_authorization: Canadian work authorization — able to work remotely for a
+  US company from Canada, but NOT authorized to work on-site in the US without sponsorship.
+  Always check a "Remote - US" posting explicitly allows remote-from-Canada before treating
+  it as a match; if unclear, flag it as "confirm eligibility" rather than a hard reject.
+
+seniority:
+  Search broadly across all QA seniority titles (Junior, Intermediate, Senior,
+  QA Lead) and across both automation and manual QA — job titles vary a lot between
+  companies and don't reliably reflect actual scope, so don't filter postings out purely
+  because the title says "Junior" or "Intermediate" if the responsibilities fit. Actual
+  candidate background is QA Automation Engineer / Senior QA with over 6 years of experience;
+  /apply should always tailor the resume and cover letter to present that full level of experience
+  regardless of the posting's title. Open to individual-contributor or lead roles, not interested in pure
+  people-management roles with no hands-on QA/automation component.
+
+must_haves:
+  - Software testing / QA automation as a core job function
+  - Exposure to API testing (REST / GraphQL), UI automation (Selenium / Playwright), or integration testing
+
+nice_to_haves:
+  - Playwright, Selenium, or modern TypeScript/Java/Python test automation
+  - API testing & automation (Postman, Newman, GraphQL, REST)
+  - CI/CD integration (GitHub Actions, Jenkins, Azure DevOps)
+  - AI-assisted testing / AI agent workflows / LLM-based QA tooling
+  - Cloud / Container testing (AWS, Docker, Kubernetes)
+  - Maritime, Government, Mining, Data Security, Cyber Security, or SaaS domain
+  - Small-to-mid-size company where QA has real influence over process
+
+deal_breakers:
+  - Unpaid or "trial project" style application processes
+  - Roles requiring relocation outside Canada
+  - Pure manual-testing data-entry roles with no growth path or technical component
+
+portals:
+  - name: LinkedIn Jobs
+    url: https://www.linkedin.com/jobs/
+    notes: Primary source. Search location "Vancouver, British Columbia, Canada" and "Remote" + Canada.
+  - name: Indeed
+    url: https://ca.indeed.com/
+    notes: Search keywords "QA Automation", "SDET", "Quality Assurance" for Vancouver, BC and Remote Canada.
+  - name: BrianJobs / Tech Job Boards
+    url: https://brianjobs.com/
+    notes: Aggregator and tech community job boards (BrianJobs, BuiltIn, Startup.jobs, TechCareers) covering Canadian tech hubs.
+  - name: Company Career Pages & ATS
+    url: Multiple (Greenhouse, Lever, Ashby, Workday)
+    notes: Direct listings from targeted tech and cybersecurity employers.

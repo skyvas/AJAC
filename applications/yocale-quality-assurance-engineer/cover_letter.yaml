@@ -1,0 +1,27 @@
+contact:
+  name: Akash Vashista
+  location: Vancouver, BC
+  phone: "+1(226) 998-4015"
+  email: akashvashista@hotmail.com
+  linkedin: https://www.linkedin.com/in/skydeep9898
+
+date: "August 19, 2026"
+
+recipient: |
+  Hiring Team
+  Yocale Network Corporation
+  North Vancouver, BC
+
+salutation: "Dear Yocale Hiring Team,"
+
+body_paragraphs:
+  - >
+    I am excited to apply for the Quality Assurance Engineer (QA Automation Engineer) role at Yocale in North Vancouver. With over 6 years of experience designing test automation frameworks, validating web and mobile applications, and streamlining release verification for SaaS products, I would love to help scale quality across Yocale's business management and online scheduling platform.
+  - >
+    Throughout my career, I have architected maintainable UI and API test automation frameworks using Playwright, TypeScript, Selenium, and Postman. At Plato, I led the development of a Playwright automation framework that significantly accelerated regression test coverage. In previous roles at ESDC and AMD Silo AI, I created reusable end-to-end test suites, cut manual testing effort by over 45%, and integrated test pipelines into GitHub Actions to support regular production deployments.
+  - >
+    I admire how Yocale empowers appointment-based businesses through integrated scheduling, point-of-sale payments, automated client flows, and business reporting. Testing user-facing workflows across web and mobile interfaces to ensure fast, reliable booking and billing experiences is exactly the kind of SaaS product challenge I enjoy owning.
+  - >
+    My approach to quality engineering combines systematic test planning, thorough root-cause analysis for reported bugs, and close collaboration with product managers and developers. I take pride in creating clear, well-documented defect reports in Jira, verifying production releases, and mentoring team members on test automation best practices.
+  - >
+    Thank you for your time and consideration. I would welcome the opportunity to discuss how my test automation and SaaS quality engineering background can contribute to Yocale's continued growth.

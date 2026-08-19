@@ -1,0 +1,27 @@
+contact:
+  name: Akash Vashista
+  location: Vancouver, BC
+  phone: "+1(226) 998-4015"
+  email: akashvashista@hotmail.com
+  linkedin: https://www.linkedin.com/in/skydeep9898
+
+date: "August 19, 2026"
+
+recipient: |
+  Hiring Team
+  D3 Security
+  Vancouver, BC
+
+salutation: "Dear D3 Security Hiring Team,"
+
+body_paragraphs:
+  - >
+    I am writing to express my enthusiastic interest in the Senior Software Engineer (SDET / QA Engineer) role at D3 Security in Vancouver. With over 6 years of experience in test automation framework design, cybersecurity software testing, and API verification, I am eager to contribute to D3 Security's Next-Gen SOAR and AI-powered autonomous SOC platform.
+  - >
+    My background centers on architecting scalable UI and API automation frameworks and ensuring high reliability across enterprise software systems. At Imperva, I performed comprehensive testing for an industry-leading Cybersecurity product (Data Security Fabric), automated security testing for MFA and SSO in Docker containers, and cut manual API testing by 80%. At AMD Silo AI, I developed automated GraphQL and REST API suites that reduced regression execution time by 70%.
+  - >
+    I am particularly drawn to D3 Security's work on the Morpheus platform and its mission to automate complex incident response workflows. Having tested cybersecurity products that defend mission-critical systems, I appreciate the high bar for software quality and security required when engineering autonomous SOC solutions.
+  - >
+    My working style is defined by a rigorous attention to detail, proactive risk identification during sprint planning, and a strong collaborative ethos across development and DevOps teams. I have extensive hands-on experience integrating automated tests into Jenkins and GitHub Actions CI/CD pipelines, managing test environments, and validating data integrity across PostgreSQL, SQL Server, and MongoDB.
+  - >
+    Thank you for your time and consideration. I look forward to the opportunity to discuss how my test automation and cybersecurity testing background can support D3 Security's engineering goals.

@@ -1,0 +1,132 @@
+contact:
+  name: Akash Vashista
+  location: Vancouver, BC
+  phone: "+1(226) 998-4015"
+  email: akashvashista@hotmail.com
+  linkedin: https://www.linkedin.com/in/skydeep9898
+  github: https://github.com/skyvas
+
+headline: "Lead QA Automation Engineer | Test Framework Architect | Playwright, TypeScript & CI/CD Leadership"
+
+summary: >
+  QA Automation Engineer and Technical Lead with over 6 years of experience architecting end-to-end UI and API
+  test automation frameworks using Playwright, TypeScript, Selenium, and Postman. Proven track record of leading quality
+  initiatives, integrating automation into GitHub Actions CI/CD pipelines, and mentoring engineers to elevate team-wide
+  testing standards. Expert in designing maintainable, scalable test suites that accelerate releases and eliminate flaky tests.
+
+core_competencies:
+  - category: Test Automation & Framework Design
+    items:
+      - UI Test Automation (Playwright, Selenium)
+      - API Automation & Integration Testing (Postman, Newman, REST, GraphQL)
+      - Framework Architecture & Reusable Automation Components
+      - TestNG, JUnit, Allure Reporting
+      - Cross-Browser & Multi-Platform Testing
+      - Performance & Regression Testing
+  - category: Agile Leadership & Quality Assurance
+    items:
+      - Mentoring & Technical Leadership
+      - Test Strategy & Comprehensive Test Plans
+      - Sprint Planning & Risk Identification
+      - Code Reviews & PR Management (GitHub)
+      - Defect Lifecycle Management (Jira, X-Ray, Zephyr)
+  - category: Cloud, DevOps & CI/CD
+    items:
+      - CI/CD Test Integration (GitHub Actions, Jenkins, Azure DevOps)
+      - Containerization & Orchestration (Docker, Kubernetes)
+      - AWS Cloud Services & Microservices Testing
+      - Version Control & Release Readiness (Git, GitHub)
+  - category: AI & Modern Quality Engineering
+    items:
+      - AI-Assisted Test Automation
+      - AI Agents & Prompt Workflows (Claude, Antigravity)
+      - Automated Workflow Acceleration
+      - Continuous Testing & Defect Detection Optimization
+  - category: API, Security & Backend Testing
+    items:
+      - REST & GraphQL API Validation
+      - Database Testing & Verification (PostgreSQL, MongoDB, SQL Server)
+      - Security Testing (Authentication, Authorization, MFA, SSO)
+
+professional_strengths:
+  - name: Scalable Test Automation Frameworks
+    detail: Proven track record of architecting and building robust UI and API automation frameworks from scratch using Playwright, Selenium, Java, TypeScript, and Postman.
+  - name: Agile Leadership & Mentorship
+    detail: Proactive collaborator in sprint planning and risk assessment, with a strong history of mentoring engineers and driving quality best practices.
+  - name: AI-Driven QA & Tooling
+    detail: Pioneered AI-agent workflows and LLM-assisted testing tools to accelerate test case design, automate repetitive tasks, and speed up regression cycles.
+  - name: End-to-End API & Security Testing
+    detail: Deep expertise in validating complex REST and GraphQL APIs, uncovering vulnerabilities in authentication/authorization flows, MFA, SSO, and data exposure.
+
+experience:
+  - title: Automation Specialist
+    company: Plato
+    dates: "Nov 2025 - Feb 2026"
+    bullets:
+      - Built UI and API automation framework using Playwright integrated with AI agents, reducing test development effort and accelerating regression coverage.
+      - Designed reusable AI-agent skills and workflows to accelerate test-case creation, automation development, and validation of new application features.
+      - Mentored junior engineers in automation and AI-driven testing practices.
+      - Presented project outcomes to the entire company, receiving formal recognition and being featured in the company newsletter for project contributions.
+
+  - title: Test Automation Specialist
+    company: Plato
+    dates: "Mar 2025 - Jun 2025"
+    bullets:
+      - Led the design of a scalable Selenium-based UI automation framework using Java.
+      - Automated 10+ end-to-end UI flows and validations, significantly reducing manual QA effort.
+      - Integrated CI/CD pipelines with GitHub Actions and configured Allure reports.
+      - Mentored two QA engineers in UI automation, reviewed pull requests on GitHub, and managed code merges to maintain quality and consistency.
+
+  - title: Test Automation Specialist
+    company: Employment and Social Development Canada
+    dates: "Jan 2025 - Mar 2025"
+    bullets:
+      - Collaborated with 8+ engineers to align automation coverage with complex employment insurance related workflows.
+      - Enhanced the existing UI automation framework by cutting manual testing efforts by 45%.
+      - Designed and implemented end-to-end automated tests for dual-interface government applications using TypeScript and Selenium.
+      - Developed automated security test cases for user authentication workflows across multiple platforms, including Service Canada and other provincial service portals.
+      - Deployed and managed custom containerized applications using Docker and Kubernetes, validating system reliability by simulating container outages and overload scenarios to ensure fault tolerance and high availability.
+      - Partnered with product and engineering leaders to align quality goals with release timelines.
+
+  - title: QA Engineer
+    company: Nutrien
+    dates: "Jun 2025 - Nov 2025"
+    bullets:
+      - Designed and executed test scenarios to validate business requirements and ensure workflow reliability of mission critical mining applications.
+      - Automated REST APIs with Postman, reducing manual API validation by 50%.
+      - Validated backend integrations using AWS services and Postman.
+      - Performed web and mobile testing (iOS/Android), improving release stability and reducing post-release defects.
+      - Mentored three QA engineers in API testing and test automation.
+
+  - title: QA Engineer
+    company: AMD Silo AI
+    dates: "May 2023 - Dec 2024"
+    bullets:
+      - Implemented a reusable automation framework that supports both GraphQL and REST APIs for both offline and online systems, reducing the overall test automation effort by over 50%.
+      - Created GraphQL API automated tests to ensure backend reliability reducing regression execution time by 70%.
+      - Worked extensively with AWS services including Cognito, S3, AppSync, and Lambda to validate 15+ backend workflows and resilience.
+      - Devised comprehensive test plans and executed test cases while tracking and validating defects through X-Ray and detailed Jira tickets.
+
+  - title: Software QA Engineer
+    company: Imperva
+    dates: "Jun 2021 - Nov 2022"
+    bullets:
+      - Performed Functional, Exploratory, Regression, Browser Compatibility, GUI testing of an industry-leading Cybersecurity product - Data Security Fabric.
+      - Built hybrid automation framework using Selenium, Java, and TestNG, increasing automation coverage by 30%.
+      - Reduced manual API testing by 80% through automation.
+      - Created 8+ custom automation scripts to reduce manual steps and streamline expected results using Shell scripts, APIs and SQL queries.
+
+tools_and_technologies:
+  Test Automation: [Playwright, Selenium, Postman, Newman, Allure, JUnit, TestNG]
+  Languages: [TypeScript, JavaScript, Java, Python, Bash, SQL]
+  API Testing: [REST, GraphQL, Postman, Newman, AppSync]
+  Cloud & DevOps: [GitHub Actions, Jenkins, Azure DevOps, AWS, Docker, Kubernetes]
+  Databases: [PostgreSQL, MongoDB, SQL Server, AWS DocumentDB, AWS Redshift]
+  AI and Automation: [AI-Assisted Test Automation, AI Agents, Claude, Antigravity]
+  Tools & Collaboration: [GitHub, Jira, X-Ray, Zephyr, VS Code, Figma, PowerShell]
+
+education:
+  - degree: Master of Science - Computer Science
+    school: Western University (Dec 2020)
+  - degree: Bachelor of Technology
+    school: M.S. Institute of Technology (Jun 2018)

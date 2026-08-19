@@ -1,0 +1,27 @@
+contact:
+  name: Akash Vashista
+  location: Vancouver, BC
+  phone: "+1(226) 998-4015"
+  email: akashvashista@hotmail.com
+  linkedin: https://www.linkedin.com/in/skydeep9898
+
+date: "August 19, 2026"
+
+recipient: |
+  Autodesk Construction Cloud Hiring Team
+  Autodesk
+  Vancouver, BC
+
+salutation: "Dear Autodesk Hiring Team,"
+
+body_paragraphs:
+  - >
+    I am writing to apply for the Senior SDET Engineer position with the Autodesk Construction Cloud (ACC) team in Vancouver. With over 6 years of experience in test automation framework development, API validation, cloud infrastructure testing, and CI/CD integration, I am excited about the opportunity to help build and maintain robust QA services for ACC's mission-critical construction software suite.
+  - >
+    Throughout my career, I have specialized in architecting scalable automation frameworks that validate complex backend services and streamline deployment pipelines. At AMD Silo AI, I developed automated GraphQL and REST API testing frameworks integrated with AWS cloud services (Cognito, S3, AppSync, Lambda) that cut regression execution time by 70%. At Plato and ESDC, I built automated test frameworks with Playwright and Selenium, simulated container outages on Docker and Kubernetes, and configured automated GitHub Actions workflows.
+  - >
+    I am drawn to Autodesk's vision for the Autodesk Construction Cloud and its impact on how project teams, field engineers, and BIM managers collaborate. Ensuring high availability, monitoring API traffic and failure rates, and building reusable test automation services for a high-traffic cloud platform align directly with the technical problems I enjoy solving.
+  - >
+    My approach to quality engineering combines systematic test architecture design with clear communication and team mentorship. I have experience partnering with developers and operations engineers to ensure comprehensive test coverage, maintaining high defect tracking standards in Jira and X-Ray, and guiding junior engineers in automation best practices.
+  - >
+    Thank you for your time and consideration. I would welcome the opportunity to discuss how my test automation and cloud testing background can support Autodesk's Construction Cloud engineering team.
