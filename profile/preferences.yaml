@@ -54,1117 +54,202 @@ deal_breakers:
   - Pure manual-testing data-entry roles with no growth path or technical component
 
 portals:
-
-  # ============================================================
-  # 1. ESSENTIAL CANADIAN GENERAL JOB BOARDS
-  # ============================================================
-
   - name: LinkedIn Jobs
     url: https://www.linkedin.com/jobs/
-    scope: canada
-    priority: critical
-    locations:
-      - Vancouver, British Columbia, Canada
-      - Greater Vancouver, British Columbia, Canada
-      - Remote, Canada
-    notes: >
-      Primary professional job source. Search Vancouver, BC, Greater Vancouver,
-      British Columbia and Remote Canada. Excellent for technology, QA,
-      cybersecurity, engineering, product and corporate roles.
-
+    notes: Primary source. Search location "Vancouver, British Columbia, Canada" and "Remote" + Canada.
+  - name: Indeed
+    url: https://ca.indeed.com/
+    notes: Search keywords "QA Automation", "SDET", "Quality Assurance" for Vancouver, BC and Remote Canada.
+  - name: BrianJobs / Tech Job Boards
+    url: https://brianjobs.com/
+    notes: Aggregator and tech community job boards (BrianJobs, BuiltIn, Startup.jobs, TechCareers) covering Canadian tech hubs.
+  - name: Company Career Pages & ATS
+    url: Multiple (Greenhouse, Lever, Ashby, Workday)
+    notes: Direct listings from targeted tech and cybersecurity employers.   
   - name: Indeed Canada
     url: https://ca.indeed.com/
-    scope: canada
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - British Columbia
-      - Canada Remote
-    search_keywords:
-      - QA Automation
-      - QA Engineer
-      - Software QA
-      - SDET
-      - Quality Assurance
-      - Test Automation
-      - Automation Engineer
-      - Software Test Engineer
-      - Cybersecurity
-      - Security Engineer
-      - DevOps
-    notes: >
-      Very high-volume general job board. Useful for both direct employer
-      postings and recruiter/agency listings.
+    notes: Large general job board. Strong coverage for Vancouver and remote Canada.
 
   - name: Government of Canada Job Bank
     url: https://www.jobbank.gc.ca/
-    scope: canada
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - British Columbia
-      - Canada
-    notes: >
-      Official Government of Canada job board. Supports Vancouver searches,
-      Canada-wide searches and remote-work filtering. Particularly useful for
-      employers posting directly to Job Bank, public-sector-adjacent roles,
-      regulated occupations and LMIA-related research.
+    notes: Official Canadian job board with Vancouver and remote-work filters.
 
   - name: WorkBC
     url: https://www.workbc.ca/
-    scope: british_columbia
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - British Columbia
-    notes: >
-      Official British Columbia employment and career resource. Important
-      source for BC-specific employment opportunities and labour-market
-      information.
-
-  - name: Eluta
-    url: https://www.eluta.ca/
-    scope: canada
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Canadian job search engine associated with the Canada's Top 100
-      Employers project. Strong source for employer-direct opportunities.
-
-  - name: Glassdoor Canada
-    url: https://www.glassdoor.ca/Job/index.htm
-    scope: canada
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Useful for job discovery plus employer reviews, salary information and
-      interview information.
-
-  - name: Talent.com Canada
-    url: https://ca.talent.com/
-    scope: canada
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Large Canadian job aggregator. Useful as a secondary source for
-      discovering postings that may not appear prominently elsewhere.
-
-  - name: Workopolis
-    url: https://www.workopolis.com/
-    scope: canada
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Long-running Canadian employment platform. Use as a secondary general
-      job source.
-
-  - name: SimplyHired Canada
-    url: https://www.simplyhired.ca/
-    scope: canada
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      General job aggregator. Useful for cross-checking jobs from other
-      sources.
-
-  - name: CareerBuilder Canada
-    url: https://www.careerbuilder.ca/
-    scope: canada
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      General job board. Better treated as a supplemental source.
-
-  - name: Jobillico
-    url: https://www.jobillico.com/
-    scope: canada
-    priority: medium
-    locations:
-      - British Columbia
-      - Canada
-    notes: >
-      Canadian employment platform with significant Canadian employer
-      coverage.
-
-  - name: Jobboom
-    url: https://www.jobboom.com/
-    scope: canada
-    priority: medium
-    locations:
-      - British Columbia
-      - Canada
-    notes: >
-      Canadian job board, particularly useful for broader Canadian searches.
-
-  # ============================================================
-  # 2. BRITISH COLUMBIA / VANCOUVER-SPECIFIC
-  # ============================================================
+    notes: British Columbia's official employment and job-search portal.
 
   - name: BCjobs.ca
     url: https://www.bcjobs.ca/
-    scope: british_columbia
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - Burnaby, BC
-      - Richmond, BC
-      - Surrey, BC
-      - Victoria, BC
-      - British Columbia
-    notes: >
-      BC-focused employment board. High relevance for Vancouver and
-      Lower Mainland searches.
+    notes: BC-focused job board with strong Vancouver and Lower Mainland coverage.
 
-  - name: Vancouver Public Library Job Resources
-    url: https://www.vpl.ca/guides/career-and-job-search/finding-online-postings
-    scope: british_columbia
-    priority: high
-    locations:
-      - Vancouver, BC
-    notes: >
-      Not a job board itself, but an excellent curated directory of Canadian
-      job-search resources. Useful for discovering additional legitimate
-      Canadian boards.
+  - name: Eluta
+    url: https://www.eluta.ca/
+    notes: Canadian job search engine with strong employer-direct listings.
 
-  - name: Vancouver Tech Journal
-    url: https://vantechjournal.com/
-    scope: vancouver
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - British Columbia
-    notes: >
-      Vancouver technology ecosystem publication. Monitor its company,
-      startup and hiring ecosystem for employer discovery and job leads.
+  - name: Glassdoor Canada
+    url: https://www.glassdoor.ca/Job/index.htm
+    notes: Jobs plus company reviews, salaries, and interview information.
+
+  - name: Jobillico
+    url: https://www.jobillico.com/
+    notes: Canadian job board covering employers across multiple industries.
+
+  - name: Talent.com Canada
+    url: https://ca.talent.com/
+    notes: Large job aggregator with Canadian and remote listings.
+
+  - name: Workopolis
+    url: https://www.workopolis.com/
+    notes: Established Canadian general-purpose job board.
 
   - name: TechJobs.ca
     url: https://www.techjobs.ca/
-    scope: canada
-    priority: high
-    locations:
-      - Vancouver, BC
-      - British Columbia
-      - Canada
-    notes: >
-      Canadian technical and engineering job network. Covers software,
-      technology, engineering, QA-related and other technical occupations.
-
-  - name: Jobs.ca
-    url: https://www.jobs.ca/
-    scope: canada
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Canadian job network with specialized sister sites for technology,
-      accounting, project management, HR, sales, legal, healthcare and
-      other occupations.
-
-  - name: TechJobs.ca - Vancouver
-    url: https://www.techjobs.ca/
-    scope: vancouver
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Greater Vancouver
-    notes: >
-      Use Vancouver and Lower Mainland location filters for technical roles.
-
-  # ============================================================
-  # 3. TECHNOLOGY / STARTUP / SOFTWARE
-  # ============================================================
+    notes: Canadian technology-focused board; useful for software, QA, IT, and engineering.
 
   - name: Wellfound
     url: https://wellfound.com/
-    scope: technology_startups
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - Greater Vancouver
-      - British Columbia
-      - Canada
-      - Remote Canada
-    notes: >
-      One of the strongest startup/technology sources. Current searches expose
-      Vancouver, Greater Vancouver and Canada-wide startup jobs, including
-      remote positions. Especially useful for software, QA, engineering,
-      cybersecurity, AI, DevOps and product roles.
-
-  - name: Wellfound - Vancouver
-    url: https://wellfound.com/location/vancouver
-    scope: vancouver
-    priority: critical
-    locations:
-      - Vancouver, BC
-    notes: >
-      Dedicated Vancouver startup/technology search.
-
-  - name: Wellfound - Canada
-    url: https://wellfound.com/location/canada-startups
-    scope: canada_remote
-    priority: critical
-    locations:
-      - Canada
-      - Remote Canada
-    notes: >
-      Dedicated Canada startup search. Includes Canada-only remote jobs.
+    notes: Excellent for startups, software, QA, cybersecurity, and remote technology jobs.
 
   - name: Built In
     url: https://builtin.com/jobs
-    scope: technology
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Technology/startup job board. Search Canadian technology companies and
-      remote roles.
+    notes: Technology and startup jobs, including remote opportunities.
 
   - name: Startup Jobs
     url: https://startup.jobs/
-    scope: technology_startups
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Startup-focused job board. Useful for software, product, operations,
-      engineering and growth roles.
+    notes: Startup-focused job board with technology and engineering roles.
 
-  - name: BrainJobs
+  - name: BrianJobs
     url: https://brianjobs.com/
-    scope: technology
-    priority: medium
-    locations:
-      - Canada
-      - Vancouver, BC
-      - Remote
-    notes: >
-      Include as a supplemental technology/community job source. Verify
-      individual listings and employer details before applying.
-
-  - name: Dice
-    url: https://www.dice.com/
-    scope: technology
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Primarily North American technology recruiting. Current search results
-      include Vancouver technology positions. Useful for software, IT,
-      cybersecurity, infrastructure and contract opportunities.
-
-  - name: Jobspresso
-    url: https://jobspresso.co/
-    scope: remote_technology
-    priority: high
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      Remote-focused board covering technology, development, product,
-      customer support, marketing, sales and other digital roles.
-
-  # ============================================================
-  # 4. REMOTE CANADA JOB BOARDS
-  # ============================================================
+    notes: Tech-focused job/community source; use as a secondary source.
 
   - name: We Work Remotely
-    url: https://weworkremotely.com/
-    canada_url: https://weworkremotely.com/remote-canada-jobs
-    scope: remote
-    priority: critical
-    locations:
-      - Remote Canada
-      - Canada
-    notes: >
-      Major remote-job platform. Use the Canada-specific search rather than
-      assuming that every "remote" listing accepts Canadian candidates.
+    url: https://weworkremotely.com/remote-canada-jobs
+    notes: Major remote-job board with a dedicated Canada search.
 
   - name: Remote OK
     url: https://remoteok.com/
-    canada_url: https://remoteok.com/?location=CA
-    scope: remote
-    priority: high
-    locations:
-      - Canada
-      - Remote Canada
-    notes: >
-      Large remote technology-oriented job board with a Canada location
-      filter.
+    notes: Large remote technology job board with Canada filtering.
 
   - name: Remotive
-    url: https://remotive.com/
-    canada_url: https://remotive.com/remote-canada-jobs
-    scope: remote
-    priority: high
-    locations:
-      - Canada
-      - Remote Canada
-    notes: >
-      Remote-focused platform with filters for location, category and skills.
-      Particularly useful for software, QA, IT, data, product and operations.
+    url: https://remotive.com/remote-canada-jobs
+    notes: Remote-focused board with Canada-specific listings and technology roles.
 
   - name: Working Nomads
-    url: https://www.workingnomads.com/
-    canada_url: https://www.workingnomads.com/remote-canada-jobs
-    scope: remote
-    priority: high
-    locations:
-      - Canada
-      - Remote Canada
-    notes: >
-      Curated remote digital jobs. Canada-specific remote search available.
+    url: https://www.workingnomads.com/remote-canada-jobs
+    notes: Curated remote jobs with a Canada-specific search.
 
-  - name: Remote.co
-    url: https://remote.co/
-    scope: remote
-    priority: medium
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      Remote-work job board. Search for employers explicitly accepting
-      Canadian candidates.
-
-  - name: RemoteJobs.com
-    url: https://www.remotejobs.com/
-    scope: remote
-    priority: medium
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      General remote-job search source. Use Canada eligibility filters where
-      available.
-
-  - name: FlexJobs
-    url: https://www.flexjobs.com/
-    scope: remote
-    priority: medium
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      Paid/subscription-oriented remote and flexible-work job board. Useful
-      when maximizing vetted remote opportunities.
-
-  - name: Himalayas
-    url: https://himalayas.app/jobs
-    scope: remote
-    priority: medium
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      Remote-first job board. Filter by country and role.
-
-  # ============================================================
-  # 5. GOVERNMENT / PUBLIC SECTOR
-  # ============================================================
-
-  - name: Government of Canada Jobs
-    url: https://www.canada.ca/en/services/jobs/opportunities.html
-    scope: government
-    priority: critical
-    locations:
-      - Canada
-      - British Columbia
-      - Vancouver
-    notes: >
-      Federal government employment portal. Important for federal IT,
-      cybersecurity, QA, data, engineering and administrative roles.
-
-  - name: Government of Canada - GC Jobs
-    url: https://www.canada.ca/en/services/jobs/opportunities/government.html
-    scope: government
-    priority: critical
-    locations:
-      - Canada
-      - Vancouver, BC
-    notes: >
-      Federal public-service employment opportunities.
-
-  - name: BC Public Service Careers
-    url: https://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers
-    scope: government
-    priority: critical
-    locations:
-      - British Columbia
-      - Vancouver, BC
-    notes: >
-      Provincial government career source. Important for technology,
-      cybersecurity, digital government, QA, data and IT roles.
-
-  - name: WorkBC
-    url: https://www.workbc.ca/
-    scope: public_sector_and_general
-    priority: critical
-    locations:
-      - British Columbia
-      - Vancouver
-    notes: >
-      Provincial employment resource and job-search portal.
-
-  - name: City of Vancouver Careers
-    url: https://vancouver.ca/your-government/careers.aspx
-    scope: municipal
-    priority: high
-    locations:
-      - Vancouver, BC
-    notes: >
-      Direct municipal employer source. Check IT, digital, data, applications,
-      project management and technical roles.
-
-  - name: TransLink Careers
-    url: https://www.translink.ca/about-us/careers
-    scope: public_sector
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Metro Vancouver
-    notes: >
-      Major Metro Vancouver employer. Useful for technology, cybersecurity,
-      infrastructure, data, software and corporate positions.
-
-  - name: Vancouver Coastal Health Careers
-    url: https://careers.vch.ca/
-    scope: healthcare
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Lower Mainland
-    notes: >
-      Major Vancouver-area health employer. Includes technology, digital,
-      data, information systems and administrative opportunities.
-
-  # ============================================================
-  # 6. UNIVERSITY / RESEARCH / EDUCATION
-  # ============================================================
-
-  - name: UBC Careers
-    url: https://www.ubc.ca/careers/
-    scope: education
-    priority: high
-    locations:
-      - Vancouver, BC
-    notes: >
-      University of British Columbia employment opportunities including
-      research, IT, software, data, administration and technical positions.
-
-  - name: Simon Fraser University Careers
-    url: https://www.sfu.ca/careers.html
-    scope: education
-    priority: high
-    locations:
-      - Burnaby, BC
-      - Vancouver, BC
-      - Surrey, BC
-    notes: >
-      Major Metro Vancouver university employer.
-
-  # ============================================================
-  # 7. EMPLOYMENT / TECHNOLOGY RECRUITERS
-  # ============================================================
-
-  - name: IT/IQ Tech Recruiters
-    url: https://www.iqtechnologies.com/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Vancouver technology recruitment and staffing firm. Useful for
-      permanent and contract IT/technology roles.
-
-  - name: MatchBox Consulting Group
-    url: https://matchboxconsulting.com/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Vancouver recruitment/staffing firm with technology and professional
-      services coverage.
-
-  - name: Torus Talent
-    url: https://torustalent.com/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Technical recruitment firm covering engineering, IT and technology.
-
-  - name: STRIVE Recruitment
-    url: https://striverecruitment.ca/
-    scope: recruiter
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - British Columbia
-    notes: >
-      Vancouver recruitment and staffing firm. Useful as a secondary
-      professional recruiting source.
-
-  - name: Procom
-    url: https://procom.ca/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Major Canadian technology staffing/recruiting organization. Especially
-      useful for IT, project, contract and remote/hybrid opportunities.
-
-  - name: S.i. Systems
-    url: https://www.sisystems.com/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Canadian IT staffing and recruitment firm. Strong relevance for
-      technology and contract roles.
-
-  - name: Ignite Technical Resources
-    url: https://www.ignite-tech.com/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - British Columbia
-    notes: >
-      Vancouver-based technology recruiting and staffing firm. Particularly
-      relevant to IT and technical positions.
-
-  - name: Affinity
-    url: https://www.affinity.ca/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Vancouver technology consulting, staffing and recruitment organization.
-
-  - name: OpenSource Talent
-    url: https://opensourcetalent.com/
-    scope: recruiter
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Technical recruiting and staffing. Useful for software and technology
-      professionals.
-
-  - name: Benchmark Recruitment
-    url: https://www.benchmarkrecruitment.com/
-    scope: recruiter
-    priority: high
-    locations:
-      - Burnaby, BC
-      - Vancouver, BC
-    notes: >
-      Technology-focused recruitment firm. Explicitly covers QA, software
-      development, DevOps/cloud, data, BI, network/system administration and
-      other technology disciplines.
-
-  - name: Vaco
-    url: https://www.vaco.com/
-    scope: recruiter
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Recruitment and staffing organization with technology, digital and
-      professional-services coverage.
-
-  - name: Impact Recruitment
-    url: https://www.impactrecruitment.ca/
-    scope: recruiter
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - British Columbia
-      - Canada
-    notes: >
-      Vancouver recruitment agency with technology and professional-services
-      practices.
-
-  - name: Lock Search Group
-    url: https://www.locksearchgroup.com/
-    scope: recruiter
-    priority: medium
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Canadian recruitment and executive-search organization. More useful for
-      experienced/senior positions.
-
-  # ============================================================
-  # 8. SPECIALIZED / INDUSTRY JOB NETWORKS
-  # ============================================================
-
-  - name: GitHub Jobs / GitHub Ecosystem
-    url: https://github.com/
-    scope: technology
-    priority: low
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      GitHub's former dedicated Jobs board is no longer the primary mechanism.
-      Use GitHub primarily for discovering companies, open-source projects and
-      engineering employers, then apply through their career pages.
+  - name: Jobspresso
+    url: https://jobspresso.co/
+    notes: Remote jobs with strong coverage of technology and digital roles.
 
   - name: Levels.fyi Jobs
     url: https://www.levels.fyi/jobs/
-    scope: technology
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Particularly useful for software engineering, technical leadership and
-      compensation research.
+    notes: Particularly useful for software engineering, tech companies, and compensation research.
 
-  - name: Hacker News Who Is Hiring
-    url: https://news.ycombinator.com/
-    scope: technology
-    priority: medium
-    locations:
-      - Remote
-      - Canada
-    notes: >
-      Monthly "Who is Hiring" discussions can contain startup and engineering
-      opportunities. Search specifically for Canada-friendly employers.
+  - name: Dice
+    url: https://www.dice.com/
+    notes: Technology-focused board covering software, IT, cybersecurity, and contract roles.
 
-  - name: Reddit - r/forhire
-    url: https://www.reddit.com/r/forhire/
-    scope: freelance_remote
-    priority: low
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      Community-based hiring source. Treat listings as unverified until the
-      employer and role are independently confirmed.
+  - name: Procom
+    url: https://procom.ca/
+    notes: Canadian technology recruiter with permanent, contract, and remote opportunities.
 
-  - name: Reddit - r/canada
-    url: https://www.reddit.com/r/canada/
-    scope: canada
-    priority: low
-    locations:
-      - Canada
-    notes: >
-      Not a dedicated job board. Occasionally useful for employer/job-market
-      discussions, but not a primary application source.
+  - name: S.i. Systems
+    url: https://www.sisystems.com/
+    notes: Canadian IT recruitment and staffing; useful for technology contract roles.
 
-  # ============================================================
-  # 9. DIRECT COMPANY CAREER / ATS SOURCES
-  # ============================================================
+  - name: Ignite Technical Resources
+    url: https://www.ignite-tech.com/
+    notes: Vancouver-based technology recruitment and staffing company.
+
+  - name: IT/IQ Tech Recruiters
+    url: https://www.iqtechnologies.com/
+    notes: Vancouver-focused technology recruitment and staffing.
+
+  - name: MatchBox Consulting Group
+    url: https://matchboxconsulting.com/
+    notes: Vancouver recruitment firm covering technology and professional roles.
+
+  - name: Torus Talent
+    url: https://torustalent.com/
+    notes: Vancouver technical recruitment firm covering IT and engineering.
+
+  - name: Benchmark Recruitment
+    url: https://www.benchmarkrecruitment.com/
+    notes: Vancouver technology recruitment; useful for QA, software, DevOps, and IT roles.
 
   - name: Greenhouse
     url: https://www.greenhouse.com/
-    scope: ats
-    priority: critical
-    locations:
-      - Vancouver
-      - Canada
-      - Remote
-    notes: >
-      ATS used by many technology companies. Search employer career pages
-      powered by Greenhouse rather than relying only on aggregators.
+    notes: ATS used by many technology companies; useful for finding direct employer listings.
 
   - name: Lever
     url: https://www.lever.co/
-    scope: ats
-    priority: critical
-    locations:
-      - Vancouver
-      - Canada
-      - Remote
-    notes: >
-      Widely used ATS among technology/startup employers.
+    notes: Popular ATS among technology and startup companies.
 
   - name: Ashby
     url: https://www.ashbyhq.com/
-    scope: ats
-    priority: critical
-    locations:
-      - Vancouver
-      - Canada
-      - Remote
-    notes: >
-      Modern recruiting/ATS platform increasingly used by technology and
-      startup companies.
+    notes: Modern ATS increasingly used by startups and technology companies.
 
-  - name: Workday Careers
+  - name: Workday
     url: https://www.workday.com/
-    scope: ats
-    priority: critical
-    locations:
-      - Vancouver
-      - Canada
-      - Remote
-    notes: >
-      Large enterprises, universities, financial institutions and public
-      organizations frequently use Workday for recruitment.
+    notes: Common enterprise ATS used by large Canadian employers and universities.
 
   - name: SmartRecruiters
     url: https://www.smartrecruiters.com/
-    scope: ats
-    priority: high
-    locations:
-      - Vancouver
-      - Canada
-      - Remote
-    notes: >
-      Enterprise ATS. Search employer career sites that use SmartRecruiters.
+    notes: Enterprise recruiting platform used by many large employers.
 
-  - name: iCIMS
-    url: https://www.icims.com/
-    scope: ats
-    priority: high
-    locations:
-      - Vancouver
-      - Canada
-      - Remote
-    notes: >
-      Enterprise recruiting platform used by large employers.
+  - name: City of Vancouver Careers
+    url: https://vancouver.ca/your-government/careers.aspx
+    notes: Direct source for City of Vancouver employment opportunities.
 
-  - name: Jobvite
-    url: https://www.jobvite.com/
-    scope: ats
-    priority: medium
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      ATS/recruiting platform. Useful when identifying employer career pages
-      using Jobvite.
+  - name: BC Public Service Careers
+    url: https://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers
+    notes: Direct source for British Columbia provincial government jobs.
 
-  - name: BambooHR
-    url: https://www.bamboohr.com/
-    scope: ats
-    priority: medium
-    locations:
-      - Canada
-      - Remote
-    notes: >
-      Some employers publish career opportunities through BambooHR.
+  - name: TransLink Careers
+    url: https://www.translink.ca/about-us/careers
+    notes: Metro Vancouver employer with technology, IT, engineering, and corporate roles.
 
-  # ============================================================
-  # 10. MAJOR VANCOUVER / CANADIAN TECH EMPLOYER CAREER SOURCES
-  # ============================================================
+  - name: UBC Careers
+    url: https://www.ubc.ca/careers/
+    notes: University jobs including technology, research, IT, and administrative roles.
+
+  - name: SFU Careers
+    url: https://www.sfu.ca/careers.html
+    notes: Simon Fraser University jobs across technology, research, and professional services.
 
   - name: Amazon Jobs
     url: https://www.amazon.jobs/
-    scope: employer
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote Canada
-    notes: >
-      Major Vancouver technology employer. Search software, QA, SDET,
-      security, cloud, DevOps, data and systems roles.
+    notes: Major Vancouver technology employer; search software, QA, SDET, security, and cloud roles.
 
   - name: Microsoft Careers
     url: https://careers.microsoft.com/
-    scope: employer
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Search Vancouver and Canada technology opportunities.
+    notes: Direct source for Microsoft technology roles in Vancouver and Canada.
 
   - name: Google Careers
     url: https://www.google.com/about/careers/
-    scope: employer
-    priority: critical
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Major Canadian technology employer. Search Vancouver/Canada locations.
-
-  - name: Apple Careers
-    url: https://jobs.apple.com/
-    scope: employer
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Search Canadian technology, software, hardware and operations positions.
-
-  - name: SAP Careers
-    url: https://www.sap.com/about/careers.html
-    scope: employer
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Enterprise software employer with Canadian technology opportunities.
-
-  - name: Salesforce Careers
-    url: https://careers.salesforce.com/
-    scope: employer
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Search Vancouver/Canada engineering, QA, security, cloud, data and
-      customer-facing technology positions.
-
-  - name: SAP Vancouver
-    url: https://www.sap.com/about/careers.html
-    scope: employer
-    priority: high
-    locations:
-      - Vancouver, BC
-    notes: >
-      Vancouver is an important Canadian enterprise-software technology hub.
-
-  - name: Hootsuite Careers
-    url: https://www.hootsuite.com/careers
-    scope: employer
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Vancouver-founded technology employer. Monitor direct openings.
-
-  - name: Clio Careers
-    url: https://www.clio.com/about/careers/
-    scope: employer
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-      - Remote
-    notes: >
-      Major Canadian legal-tech company with Vancouver presence.
-
-  - name: D-Wave Careers
-    url: https://www.dwavesys.com/company/careers/
-    scope: employer
-    priority: high
-    locations:
-      - Burnaby, BC
-      - Greater Vancouver
-      - Canada
-    notes: >
-      Vancouver-area deep-tech/quantum-computing employer.
+    notes: Direct source for Google technology opportunities in Canada.
 
   - name: EA Careers
     url: https://www.ea.com/careers
-    scope: employer
-    priority: high
-    locations:
-      - Vancouver, BC
-      - Canada
-    notes: >
-      Major Vancouver games/technology employer. Useful for software,
-      QA/testing, automation and technical production positions.
+    notes: Vancouver technology/gaming employer with software and QA/testing opportunities.
 
-  # ============================================================
-  # 11. SEARCH STRATEGY / AUTOMATION METADATA
-  # ============================================================
+  - name: Hootsuite Careers
+    url: https://www.hootsuite.com/careers
+    notes: Vancouver technology company; check direct listings for engineering and QA roles.
 
-search_profiles:
+  - name: Clio Careers
+    url: https://www.clio.com/about/careers/
+    notes: Vancouver-founded technology company with software and technical roles.
 
-  - name: QA Automation - Vancouver
-    locations:
-      - Vancouver, British Columbia, Canada
-      - Burnaby, British Columbia, Canada
-      - Richmond, British Columbia, Canada
-      - Surrey, British Columbia, Canada
-      - Greater Vancouver, British Columbia, Canada
-    keywords:
-      - QA Automation
-      - QA Engineer
-      - Software QA Engineer
-      - SDET
-      - Software Development Engineer in Test
-      - Test Automation Engineer
-      - Automation Test Engineer
-      - Quality Assurance Engineer
-      - Software Test Engineer
-      - Test Engineer
-      - Quality Engineer
-      - Automation Engineer
+  - name: D-Wave Careers
+    url: https://www.dwavesys.com/company/careers/
+    notes: Burnaby-based deep-tech company; useful for engineering and technical roles.
 
-  - name: QA Automation - Remote Canada
-    locations:
-      - Remote Canada
-      - Canada
-    keywords:
-      - QA Automation
-      - SDET
-      - Test Automation
-      - Automation Engineer
-      - Quality Assurance
-      - Software QA
-      - Software Test Engineer
-      - Quality Engineer
+  - name: SAP Careers
+    url: https://www.sap.com/about/careers.html
+    notes: Enterprise technology employer with Canadian opportunities.
 
-  - name: Cybersecurity - Vancouver
-    locations:
-      - Vancouver, BC
-      - Burnaby, BC
-      - Greater Vancouver, BC
-    keywords:
-      - Cybersecurity
-      - Security Engineer
-      - Application Security
-      - Product Security
-      - Cloud Security
-      - Security Analyst
-      - SOC Analyst
-      - Security Operations
-      - DevSecOps
-      - Penetration Testing
-      - Vulnerability Management
-
-  - name: Cybersecurity - Remote Canada
-    locations:
-      - Remote Canada
-      - Canada
-    keywords:
-      - Cybersecurity
-      - Security Engineer
-      - Application Security
-      - Product Security
-      - Cloud Security
-      - Security Analyst
-      - DevSecOps
-      - SOC
-      - Security Operations
-
-  - name: Software Engineering - Vancouver
-    locations:
-      - Vancouver, BC
-      - Burnaby, BC
-      - Richmond, BC
-      - Greater Vancouver, BC
-    keywords:
-      - Software Engineer
-      - Backend Engineer
-      - Frontend Engineer
-      - Full Stack Engineer
-      - Platform Engineer
-      - DevOps Engineer
-      - Cloud Engineer
-      - Site Reliability Engineer
-      - SRE
-
-  - name: Software Engineering - Remote Canada
-    locations:
-      - Remote Canada
-      - Canada
-    keywords:
-      - Software Engineer
-      - Backend Engineer
-      - Frontend Engineer
-      - Full Stack Engineer
-      - Platform Engineer
-      - DevOps Engineer
-      - Cloud Engineer
-      - SRE
-
-priority_strategy:
-  tier_1_daily:
-    - LinkedIn Jobs
-    - Indeed Canada
-    - Government of Canada Job Bank
-    - WorkBC
-    - BCjobs.ca
-    - Wellfound
-    - TechJobs.ca
-    - We Work Remotely
-    - Remotive
-    - Remote OK
-
-  tier_2_daily_or_3x_weekly:
-    - Eluta
-    - Glassdoor Canada
-    - Startup Jobs
-    - Built In
-    - Jobspresso
-    - Working Nomads
-    - Procom
-    - S.i. Systems
-    - Ignite Technical Resources
-    - IT/IQ Tech Recruiters
-    - Benchmark Recruitment
-
-  tier_3_weekly:
-    - Company Career Pages
-    - Greenhouse
-    - Lever
-    - Ashby
-    - Workday
-    - SmartRecruiters
-    - iCIMS
-    - Levels.fyi
-    - City of Vancouver Careers
-    - TransLink Careers
-    - UBC Careers
-    - SFU Careers
-
-important_filters:
-  - "Remote - Canada"
-  - "Remote - British Columbia"
-  - "Remote - Vancouver"
-  - "Hybrid - Vancouver"
-  - "Vancouver, BC"
-  - "Greater Vancouver"
-  - "Burnaby"
-  - "Richmond"
-  - "Surrey"
-  - "Coquitlam"
-  - "New Westminster"
-
-
+  - name: Salesforce Careers
+    url: https://careers.salesforce.com/
+    notes: Technology and cloud roles across Canada, including Vancouver opportunities.

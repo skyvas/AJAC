@@ -8,8 +8,11 @@ Usage:
 The YAML schemas are documented in profile/profile.yaml (resume) and the
 cover letter example in applications/_example/. This script only formats
 data it's given — all tailoring/wording decisions happen upstream in the
-Claude Code session, not here.
+Gemini / Antigravity session, not here.
 """
+import os
+import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -20,6 +23,42 @@ from docx.shared import Pt, RGBColor, Inches
 
 ACCENT = RGBColor(0x1F, 0x3A, 0x5F)
 TEXT = RGBColor(0x22, 0x22, 0x22)
+
+
+def find_soffice():
+    for cmd in ["soffice", "libreoffice"]:
+        path = shutil.which(cmd)
+        if path:
+            return path
+    mac_app = Path("/Applications/LibreOffice.app/Contents/MacOS/soffice")
+    if mac_app.is_file() and os.access(mac_app, os.X_OK):
+        return str(mac_app)
+    return None
+
+
+def export_to_pdf(docx_path: Path):
+    soffice_bin = find_soffice()
+    if not soffice_bin:
+        print(f"Warning: LibreOffice (soffice) not found. PDF could not be generated for {docx_path}")
+        return None
+    try:
+        cmd = [
+            soffice_bin,
+            "--headless",
+            "--convert-to",
+            "pdf",
+            str(docx_path.resolve()),
+            "--outdir",
+            str(docx_path.parent.resolve()),
+        ]
+        subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+        pdf_path = docx_path.with_suffix(".pdf")
+        if pdf_path.exists():
+            print(f"Wrote {pdf_path}")
+            return pdf_path
+    except Exception as e:
+        print(f"Warning: Failed to generate PDF from {docx_path}: {e}")
+    return None
 
 
 def set_margins(doc, inches=0.6):
@@ -208,6 +247,11 @@ def build_cover_letter(data: dict, out_path: Path):
 
 
 def main():
+    if len(sys.argv) == 3 and sys.argv[1] == "pdf":
+        docx_path = Path(sys.argv[2])
+        export_to_pdf(docx_path)
+        return
+
     if len(sys.argv) != 4 or sys.argv[1] not in ("resume", "cover-letter"):
         print(__doc__)
         sys.exit(1)
@@ -221,6 +265,7 @@ def main():
         build_cover_letter(data, out_path)
 
     print(f"Wrote {out_path}")
+    export_to_pdf(out_path)
 
 
 if __name__ == "__main__":

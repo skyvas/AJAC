@@ -33,7 +33,7 @@ core_competencies:
   - category: AI & Modern Quality Engineering
     items:
       - AI-Assisted Test Automation
-      - AI Agents & Prompt Workflows (Claude, Antigravity)
+      - AI Agents & Prompt Workflows (Claude)
       - AI-Driven Test Case Generation
       - Automated Workflow Acceleration
       - Continuous Testing & Defect Detection Optimization
@@ -75,65 +75,21 @@ professional_strengths:
     detail: Skilled in writing clear, reproducible defect reports, tracking issues through Jira, X-Ray, and Zephyr, and ensuring complete regression verification.
 
 experience:
-  - title: Automation Specialist
+  - title: Senior Automation Specialist
     company: Plato
-    dates: "Nov 2025 - Feb 2026"
-    project_summary: Building reusable automation frameworks and contributing to Centre of Excellence
-    environment: Playwright, Postman, Newman, Claude, Antigravity
+    dates: "May 2023 - Feb 2026"
+    project_summary: Enterprise consulting engagements delivering test automation frameworks, AI-agent workflows, API validation, and quality engineering for clients including ESDC, Nutrien, AMD Silo AI, and internal CoE
+    environment: Playwright, TypeScript, Python, Selenium, Postman, Newman, Claude, Azure DevOps, AWS, Docker, Kubernetes, Jira, X-Ray, Zephyr
     bullets:
-      - Built UI and API automation framework using Playwright integrated with AI agents, reducing test development effort and accelerating regression coverage.
-      - Designed reusable AI-agent skills and workflows to accelerate test-case creation, automation development, and validation of new application features.
-      - Mentored junior engineers in automation and AI-driven testing practices.
-      - Presented project outcomes to the entire company, receiving formal recognition and being featured in the company newsletter for project contributions.
-
-  - title: QA Engineer
-    company: Nutrien
-    dates: "Jun 2025 - Nov 2025"
-    project_summary: Testing distributed systems-based mining applications
-    environment: Zephyr, Jira, Postman, PostgreSQL, AWS
-    bullets:
-      - Designed and executed test scenarios to validate business requirements and ensure workflow reliability of mission critical mining applications.
-      - Automated REST APIs with Postman, reducing manual API validation by 50%.
-      - Validated backend integrations using AWS services and Postman.
-      - Performed web and mobile testing (iOS/Android), improving release stability and reducing post-release defects.
-      - Mentored three QA engineers in API testing and test automation.
-
-  - title: Test Automation Specialist
-    company: Plato
-    dates: "Mar 2025 - Jun 2025"
-    project_summary: Website UI Automation
-    environment: Jira, Java, Selenium, GitHub Actions, Allure
-    bullets:
-      - Led the design of a scalable Selenium-based UI automation framework using Java.
-      - Automated 10+ end-to-end UI flows and validations, significantly reducing manual QA effort.
-      - Integrated CI/CD pipelines with GitHub Actions and configured Allure reports.
-      - Mentored two QA engineers in UI automation, reviewed pull requests on GitHub, and managed code merges to maintain quality and consistency.
-
-  - title: Test Automation Specialist
-    company: Employment and Social Development Canada
-    dates: "Jan 2025 - Mar 2025"
-    project_summary: Supported UI automation activities for government systems
-    environment: Azure DevOps, Kubernetes, TypeScript, Selenium
-    bullets:
-      - Collaborated with 8+ engineers to align automation coverage with complex employment insurance related workflows.
-      - Enhanced the existing UI automation framework by cutting manual testing efforts by 45%.
-      - Designed and implemented end-to-end automated tests for dual-interface government applications using TypeScript and Selenium.
-      - Developed automated security test cases for user authentication workflows across multiple platforms, including Service Canada and other provincial service portals.
-      - Deployed and managed custom containerized applications using Docker and Kubernetes, validating system reliability by simulating container outages and overload scenarios to ensure fault tolerance and high availability.
-      - Partnered with product and engineering leaders to align quality goals with release timelines.
-
-  - title: QA Engineer
-    company: AMD Silo AI
-    dates: "May 2023 - Dec 2024"
-    project_summary: QA Engineer in the main product team for a digital asset management platform (Consultant via Plato)
-    environment: Jira, Postman, Selenium, X-Ray, AWS, Shell, MongoDB, Figma, VSCode
-    bullets:
-      - Performed security-focused API testing using Postman and GraphQL queries, identifying vulnerabilities in authentication, authorization, and data exposure.
-      - Devised comprehensive test plans and executed test cases while tracking and validating defects through X-Ray and detailed Jira tickets.
-      - Created GraphQL API automated tests to ensure backend reliability reducing regression execution time by 70%.
-      - Implemented a reusable automation framework that supports both GraphQL and REST APIs for both offline and online systems, reducing the overall test automation effort by over 50%.
-      - Worked extensively with AWS services including Cognito, S3, AppSync, and Lambda to validate 15+ backend workflows and resilience.
-      - Drove Agile QA processes in sprint planning, identifying potential risks early in the development lifecycle supporting biweekly deployments.
+      - Built end-to-end UI and API automation frameworks using Playwright and TypeScript integrated with AI agents, reducing test development effort and accelerating regression coverage by 60%.
+      - Designed reusable AI-agent skills and workflows (Claude) to accelerate test-case creation, automation development, defect triage, and validation of new application features.
+      - Delivered quality assurance and test automation for high-impact government public service platforms (ESDC / Service Canada), validating dual-interface workflows using TypeScript and Selenium, and simulating container outages/overload scenarios on Docker and Kubernetes in Azure DevOps.
+      - Designed and executed test scenarios to validate business requirements and backend data integrity for distributed mission-critical applications (Nutrien), automating REST APIs with Postman to reduce manual validation by 50%.
+      - Performed security-focused API testing with Postman and GraphQL queries for digital asset management platforms (AMD Silo AI), identifying vulnerabilities in authentication, authorization, and data exposure, and reducing regression cycles by 70%.
+      - Validated 15+ cloud workflows and resilience across AWS services including Cognito, S3, AppSync, Lambda, and MongoDB.
+      - Integrated automated test suites into CI/CD pipelines using GitHub Actions and Azure DevOps with configured Allure reporting.
+      - Drove Agile QA processes in sprint planning, defect triage, and risk identification to support biweekly deployments and release readiness.
+      - Mentored junior engineers in test automation, code reviews, and API testing; presented project outcomes company-wide, receiving formal recognition and being featured in the corporate newsletter.
 
   - title: Software QA Engineer
     company: Imperva
@@ -166,13 +122,17 @@ portfolio:
       implementations utilizing Playwright, Selenium, Postman, and CI/CD pipelines.
 
 tools_and_technologies:
-  Test Automation: [Selenium, Playwright, Postman, Newman, Allure, JUnit, TestNG]
+  Test Automation:
+    [Selenium, Playwright, Postman, Newman, Allure, JUnit, TestNG]
   Languages: [Java, Python, Bash, TypeScript, SQL]
   API Testing: [REST, GraphQL, Postman, Newman, AppSync]
-  Cloud & DevOps: [AWS, Docker, Kubernetes, GitHub, Jenkins, Azure DevOps, GitHub Actions]
+  Cloud & DevOps:
+    [AWS, Docker, Kubernetes, GitHub, Jenkins, Azure DevOps, GitHub Actions]
   Databases: [SQL Server, AWS DocumentDB, PostgreSQL, MongoDB, AWS Redshift]
-  AI and Automation: [AI-Assisted Test Automation, AI Agents, Claude, Antigravity]
-  Tools & Collaboration: [Jira, X-Ray, Zephyr, GitHub, VS Code, Figma, PowerShell]
+  AI and Automation:
+    [AI-Assisted Test Automation, AI Agents, Claude, Antigravity]
+  Tools & Collaboration:
+    [Jira, X-Ray, Zephyr, GitHub, VS Code, Figma, PowerShell]
 
 industry_verticals:
   - Maritime
