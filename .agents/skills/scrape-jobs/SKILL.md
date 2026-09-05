@@ -22,14 +22,7 @@ This skill executes multi-portal job searches, validates company legitimacy to f
 
 2. **Formulate Targeted Search Queries**:
    - Construct targeted search queries across configured job boards:
-     - `site:linkedin.com/jobs QA Engineer Vancouver`
-     - `site:ca.indeed.com/viewjob QA Automation Vancouver`
-     - `site:ca.indeed.com "SDET" "Vancouver"`
-     - `site:brianjobs.com QA Automation Canada`
-     - `site:builtinvancouver.org QA Engineer`
-     - `site:boards.greenhouse.io QA Vancouver OR Remote Canada`
-     - `site:jobs.lever.co "QA Engineer" Vancouver`
-     - `site:jobs.ashbyhq.com SDET Canada`
+   - Find job portals from preferences.yaml and generate search queries for each portal.
    - Cover the full seniority range (Junior to Lead) and both manual & automation QA titles.
    - Group queries efficiently to provide comprehensive coverage across 10–15 search executions.
 
