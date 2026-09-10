@@ -31,5 +31,9 @@ cd "$REPO_DIR" || exit 1
     echo "Notice: Neither 'agy' nor 'claude' CLI binary found in PATH."
     echo "Please ensure the Antigravity / Gemini CLI or Claude is installed, or invoke the 'daily-run' skill within Antigravity IDE."
   fi
-  echo "=== Daily job run finished $(date) with exit code $? ==="
+  DAILY_EXIT_CODE=$?
+  echo "=== Daily job run finished $(date) with exit code $DAILY_EXIT_CODE ==="
+
+  echo "--- Ensuring Application Tracker is active on localhost ---"
+  python3 "$REPO_DIR/scripts/launch_tracker.py" 5173
 } >> "$LOG_FILE" 2>&1

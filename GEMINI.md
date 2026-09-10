@@ -35,8 +35,9 @@ Skills are specialized, modular runbooks that can be activated on demand:
 - **`scrape-jobs`**: Multi-portal search (LinkedIn, Indeed, BrianJobs, BuiltIn, direct ATS boards like Greenhouse/Lever/Ashby), scam screening, fit ranking (High/Medium/Low), and output logging to `applications/scrape_<YYYY-MM-DD>.md`.
 - **`collect-job`**: Captures a single job posting URL into `applications/<slug>/job_posting.md` without drafting yet.
 - **`apply-job`**: Evaluates fit, drafts `resume.yaml` and `cover_letter.yaml`, triggers reviewer check, and builds `.docx` + `.pdf` files.
-- **`application-reviewer`**: Dedicated cold-critique skill to review drafted documents against `profile.yaml`, `job_posting.md`, and `cover_letter_voice.md` before finalization.
-- **`daily-run`**: Unattended morning routine that finds *new* postings since the last run, auto-drafts High/Medium fit positions, and writes `applications/report_<YYYY-MM-DD>.md`.
+- **`application-reviewer`**: Dedicated cold-critique skill to review drafted documents against `profile.yaml`, `job_posting.md`, and `cover_letter.voice.md` before finalization.
+- **`daily-run`**: Unattended morning routine that finds *new* postings since the last run, auto-drafts High/Medium fit positions, writes `applications/report_<YYYY-MM-DD>.md`, and verifies the application tracker is live on localhost.
+- **`launch-tracker`**: Automation check to ensure the Job Application Tracker front-end is active on localhost, launching it in the background if not running while preventing duplicate instances.
 
 ### 2. Workspace Rules (`.agents/rules/`)
 - **`job_application_rules.md`**: Core constraints for resume/cover letter drafting, schema validation, document rendering, and anti-fabrication policies.
