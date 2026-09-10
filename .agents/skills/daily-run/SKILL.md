@@ -71,5 +71,13 @@ This skill performs an automated, unattended morning workflow. It scans for newl
      ```
    - Sort the "Ready to apply" table with High-fit opportunities leading.
 
-6. **Summary Output**:
-   - Conclude with a single-sentence overview of the number of new postings found, applications drafted, and the location of `applications/report_<YYYY-MM-DD>.md`.
+6. **Launch & Verify Application Tracker**:
+   - Automatically check whether the front-end application tracker is running on `http://localhost:5173/`:
+     ```bash
+     python3 scripts/launch_tracker.py
+     ```
+   - If the tracker is already active, it verifies connectivity, triggers a background re-scan (`/api/sync`) to index today's newly created applications, and avoids starting duplicate processes.
+   - If the tracker is not running, it automatically starts `tracker/server.py` as a detached daemon process, ensuring the UI is always accessible at `http://localhost:5173/` without manual intervention.
+
+7. **Summary Output**:
+   - Conclude with an overview of the number of new postings found, applications drafted, the location of `applications/report_<YYYY-MM-DD>.md`, and confirmation that the application tracker is live at `http://localhost:5173/`.
