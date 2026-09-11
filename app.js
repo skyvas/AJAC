@@ -19,6 +19,7 @@
   const API_PASSWORD_URL = '/api/password';
   const API_SYNC_URL = '/api/sync';
   const STATIC_DATA_URL = 'data.json';
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
   // Application State
   let applications = [];
@@ -121,15 +122,17 @@
     let rawApps = [];
     let isLiveApi = false;
 
-    // 1. Try Live Server API
-    try {
-      const res = await fetch(API_APPS_URL, { cache: 'no-cache' });
-      if (res.ok) {
-        rawApps = await res.json();
-        isLiveApi = true;
+    // 1. Try Live Server API (if running on localhost)
+    if (isLocalhost) {
+      try {
+        const res = await fetch(API_APPS_URL, { cache: 'no-cache' });
+        if (res.ok) {
+          rawApps = await res.json();
+          isLiveApi = true;
+        }
+      } catch (e) {
+        // Offline or static view
       }
-    } catch (e) {
-      // Offline or static view
     }
 
     // 2. Fallback to static data.json
@@ -213,26 +216,30 @@
     updateMetrics();
     render();
 
-    // 3. Post to API for Disk Persistence
-    indicateSyncing('Saving...');
-    try {
-      const res = await fetch(API_STATUS_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          slug,
-          status: finalStatus,
-          response_status: finalResponseStatus
-        })
-      });
+    // 3. Post to API for Disk Persistence (if on localhost)
+    if (isLocalhost) {
+      indicateSyncing('Saving...');
+      try {
+        const res = await fetch(API_STATUS_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            slug,
+            status: finalStatus,
+            response_status: finalResponseStatus
+          })
+        });
 
-      if (res.ok) {
-        indicateSynced('Disk & Storage Synced');
-      } else {
+        if (res.ok) {
+          indicateSynced('Disk & Storage Synced');
+        } else {
+          indicateSynced('Saved to Storage');
+        }
+      } catch (e) {
         indicateSynced('Saved to Storage');
       }
-    } catch (e) {
-      indicateSynced('Saved to Storage');
+    } else {
+      indicateSynced('Saved to Browser Storage');
     }
   }
 
@@ -249,8 +256,6 @@
     // Save to LocalStorage immediately
     setStoredPassword(slug, trimmed);
 
-    indicateSyncing('Saving password...');
-
     // Flash small inline indicator if card exists in DOM
     const card = document.querySelector(`.app-card[data-slug="${slug}"]`);
     if (card) {
@@ -262,20 +267,25 @@
       }
     }
 
-    try {
-      const res = await fetch(API_PASSWORD_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ slug, password: trimmed })
-      });
+    if (isLocalhost) {
+      indicateSyncing('Saving password...');
+      try {
+        const res = await fetch(API_PASSWORD_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ slug, password: trimmed })
+        });
 
-      if (res.ok) {
-        indicateSynced('Disk & Storage Synced');
-      } else {
+        if (res.ok) {
+          indicateSynced('Disk & Storage Synced');
+        } else {
+          indicateSynced('Saved to Storage');
+        }
+      } catch (e) {
         indicateSynced('Saved to Storage');
       }
-    } catch (e) {
-      indicateSynced('Saved to Storage');
+    } else {
+      indicateSynced('Saved to Browser Storage');
     }
 
     showToast(trimmed ? `Password saved for ${cleanCompanyDisplay(app.company)}` : `Password cleared for ${cleanCompanyDisplay(app.company)}`);
@@ -1010,12 +1020,13 @@
     let syncedCount = 0;
     let success = false;
 
-    try {
-      const res = await fetch(API_SYNC_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        cache: 'no-cache'
-      });
+    if (isLocalhost) {
+      try {
+        const res = await fetch(API_SYNC_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          cache: 'no-cache'
+        });
 
       if (res.ok) {
         const data = await res.json();
@@ -1055,9 +1066,9 @@
         indicateSynced('Disk & Storage Synced');
         showToast(`Synced ${syncedCount} applications from folder`);
         success = true;
+      } catch (e) {
+        console.warn('Sync API failed, falling back to static reload:', e);
       }
-    } catch (e) {
-      console.warn('Sync API failed, falling back to static reload:', e);
     }
 
     if (!success) {
