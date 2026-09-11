@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracker — ai_apply</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="logo-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <path d="m9 15 2 2 4-4"></path>
+          </svg>
+        </div>
+        <div>
+          <h1 class="app-title">Job Application Tracker</h1>
+          <p class="app-subtitle">Track generated applications and submissions</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <button id="syncApplicationsBtn" class="sync-action-btn" title="Scan applications folder for new or modified postings" aria-label="Sync applications folder">
+          <svg class="sync-btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+          <span class="sync-btn-label">Sync Folder</span>
+        </button>
+        <div class="sync-indicator" id="syncStatus" title="Changes auto-save locally and to disk">
+          <span class="sync-dot"></span>
+          <span class="sync-text">Auto-Saved</span>
+        </div>
+        <button id="themeToggle" class="icon-btn" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Clean, Redesigned Quick-Switch Navigation Tabs -->
+    <nav class="quick-switch-bar" role="tablist" aria-label="Quick Switch Views">
+      <button class="quick-tab active" data-tab="active" role="tab" aria-selected="true" id="tabActive">
+        <span class="tab-label-group">
+          <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <span class="tab-title">Active Applications</span>
+        </span>
+        <span class="tab-badge badge-primary" id="countActive">0</span>
+      </button>
+
+      <button class="quick-tab" data-tab="not_applied" role="tab" aria-selected="false" id="tabNotApplied">
+        <span class="tab-label-group">
+          <span class="tab-status-dot dot-not-applied"></span>
+          <span class="tab-title">Not Applied</span>
+        </span>
+        <span class="tab-badge badge-neutral" id="countNotApplied">0</span>
+      </button>
+
+      <button class="quick-tab" data-tab="applied" role="tab" aria-selected="false" id="tabApplied">
+        <span class="tab-label-group">
+          <span class="tab-status-dot dot-applied"></span>
+          <span class="tab-title">Total Applied</span>
+        </span>
+        <span class="tab-badge badge-success" id="countApplied">0</span>
+      </button>
+
+      <button class="quick-tab" data-tab="archived" role="tab" aria-selected="false" id="tabArchived">
+        <span class="tab-label-group">
+          <svg class="tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="21 8 21 21 3 21 3 8"></polyline>
+            <rect x="1" y="3" width="22" height="5"></rect>
+            <line x1="10" y1="12" x2="14" y2="12"></line>
+          </svg>
+          <span class="tab-title">Archived (Did Not Apply)</span>
+        </span>
+        <span class="tab-badge badge-muted" id="countArchived">0</span>
+      </button>
+    </nav>
+
+    <!-- Secondary Response Status Filter (Available for Applied & Active views) -->
+    <section class="response-filter-bar" id="responseFilterBar">
+      <span class="filter-bar-label">Response Status:</span>
+      <div class="response-chips" role="group" aria-label="Filter by Response Status">
+        <button class="response-chip active" data-response-filter="all">
+          All Responses <span class="chip-count" id="countRespAll">0</span>
+        </button>
+        <button class="response-chip chip-no-answer" data-response-filter="no_answer">
+          <span class="chip-dot dot-no-answer"></span> No Answer Yet <span class="chip-count" id="countRespNoAnswer">0</span>
+        </button>
+        <button class="response-chip chip-interviewing" data-response-filter="interviewing">
+          <span class="chip-dot dot-interviewing"></span> Interviewing <span class="chip-count" id="countRespInterviewing">0</span>
+        </button>
+        <button class="response-chip chip-interview-completed" data-response-filter="interview_completed">
+          <span class="chip-dot dot-interview-completed"></span> Interview Completed <span class="chip-count" id="countRespInterviewCompleted">0</span>
+        </button>
+        <button class="response-chip chip-selected" data-response-filter="selected">
+          <span class="chip-dot dot-selected"></span> Selected <span class="chip-count" id="countRespSelected">0</span>
+        </button>
+        <button class="response-chip chip-rejected" data-response-filter="rejected">
+          <span class="chip-dot dot-rejected"></span> Rejected <span class="chip-count" id="countRespRejected">0</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Toolbar: Search & Sorting -->
+    <section class="toolbar">
+      <div class="search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search company, job title, location, date..." autocomplete="off">
+        <button id="clearSearch" class="clear-btn" aria-label="Clear search">&times;</button>
+      </div>
+
+      <div class="toolbar-right">
+        <div class="sort-container">
+          <label for="sortSelect" class="sort-label">Sort Dates:</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="date-desc">Newest Date First</option>
+            <option value="date-asc">Oldest Date First</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content List -->
+    <main class="applications-container">
+      <div class="results-bar">
+        <span id="resultsCount">Showing 0 applications</span>
+        <div class="legend" id="legendContainer">
+          <span class="legend-item"><span class="legend-dot dot-not-applied"></span> Not Applied</span>
+          <span class="legend-item"><span class="legend-dot dot-applied"></span> Applied</span>
+          <span class="legend-item"><span class="legend-dot dot-no-answer"></span> No Answer Yet</span>
+          <span class="legend-item"><span class="legend-dot dot-interviewing"></span> Interviewing</span>
+          <span class="legend-item"><span class="legend-dot dot-interview-completed"></span> Interview Completed</span>
+          <span class="legend-item"><span class="legend-dot dot-selected"></span> Selected</span>
+          <span class="legend-item"><span class="legend-dot dot-rejected"></span> Rejected</span>
+          <span class="legend-item"><span class="legend-dot dot-archived"></span> Did Not Apply</span>
+        </div>
+      </div>
+
+      <!-- Container for Date Groups or Archived list -->
+      <div id="applicationsList" class="applications-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="empty-state hidden">
+        <div class="empty-icon">📂</div>
+        <h3 id="emptyTitle">No applications found</h3>
+        <p id="emptyMessage">Try resetting search terms or switching to another filter.</p>
+        <button id="resetFiltersBtn" class="primary-btn">Reset Filters</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <span>ai_apply Job Application Tracker &bull; Vancouver, BC &bull; Remote</span>
+      <span id="persistenceNote">Data auto-synced to disk &amp; browser storage</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
