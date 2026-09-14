@@ -1066,10 +1066,11 @@
         indicateSynced('Disk & Storage Synced');
         showToast(`Synced ${syncedCount} applications from folder`);
         success = true;
-      } catch (e) {
-        console.warn('Sync API failed, falling back to static reload:', e);
       }
+    } catch (e) {
+      console.warn('Sync API failed, falling back to static reload:', e);
     }
+  }
 
     if (!success) {
       try {
