@@ -1,5 +1,28 @@
 [
   {
+    "slug": "translink-software-quality-assurance-analyst",
+    "company": "TransLink (South Coast British Columbia Transportation Authority)",
+    "title": "Software Quality Assurance Analyst - FTT",
+    "location": "Metro Vancouver, British Columbia, Canada (New Westminster / Vancouver \u2014 Hybrid)",
+    "date": "2026-09-17",
+    "source_url": "https://www.translink.ca/about-us/careers",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
     "slug": "tlnt-bridge-senior-qa-engineer",
     "company": "TLNT Bridge Recruiting",
     "title": "Senior QA Engineer (remote-Canada)",
