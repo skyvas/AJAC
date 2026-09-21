@@ -1,5 +1,97 @@
 [
   {
+    "slug": "zazz-senior-qa-engineer",
+    "company": "Zazz",
+    "title": "Senior QA Engineer",
+    "location": "Remote, Canada",
+    "date": "2026-09-21",
+    "source_url": "https://builtin.com/company/zazz/jobs/senior-qa-engineer-canada",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
+    "slug": "si-systems-senior-sdet-salesforce-crm",
+    "company": "S.i. Systems (for Enterprise Client)",
+    "title": "Senior SDET / Automation Engineer (Salesforce CRM)",
+    "location": "Burnaby, BC (Hybrid \u2014 3 days/week on-site)",
+    "date": "2026-09-21",
+    "source_url": "https://www.sisystems.com/en-ca/jobs/senior-sdet-automation-engineer-salesforce-burnaby",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
+    "slug": "si-systems-senior-qa-automation-specialist",
+    "company": "S.i. Systems (Enterprise Energy/Utilities Client)",
+    "title": "Senior QA Automation Specialist (Job ID: 155153)",
+    "location": "Remote, Canada",
+    "date": "2026-09-21",
+    "source_url": "https://www.sisystems.com/en-ca/jobs/155153",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
+    "slug": "fortinet-staff-software-development-qa-specialist",
+    "company": "Fortinet",
+    "title": "Staff Software Development QA Specialist",
+    "location": "4190 Still Creek Drive, Burnaby, BC (Hybrid / On-site)",
+    "date": "2026-09-21",
+    "source_url": "https://www.fortinet.com/corporate/careers?job=staff-software-development-qa-specialist-burnaby",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
     "slug": "wenco-international-mining-systems-software-developer-in-test-ii",
     "company": "Wenco International Mining Systems (a Hitachi Construction Machinery company)",
     "title": "Software Developer in Test II (SDET)",
