@@ -590,6 +590,26 @@
          </a>`
       : '';
 
+    // Interview Prep & Quiz link if generated
+    let prepLinkHtml = '';
+    if (app.files) {
+      if (app.files.includes('interview_prep.html')) {
+        prepLinkHtml = `
+          <a href="/applications/${app.slug}/interview_prep.html" target="_blank" rel="noopener noreferrer" class="meta-link meta-link-prep" title="Open Interactive Interview Prep & Quiz">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
+            ⚡ Prep & Quiz
+          </a>
+        `;
+      } else if (app.files.includes('interview_prep.md')) {
+        prepLinkHtml = `
+          <a href="/applications/${app.slug}/interview_prep.md" target="_blank" rel="noopener noreferrer" class="meta-link meta-link-prep" title="Open Interview Prep Guide">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            🎯 Interview Prep (MD)
+          </a>
+        `;
+      }
+    }
+
     return `
       <article class="app-card ${stateClass}" id="card-${app.slug}" data-slug="${app.slug}">
         <div class="card-content">
@@ -619,6 +639,7 @@
                 ${escapeHtml(app.location)}
               </span>
               ${sourceLinkHtml}
+              ${prepLinkHtml}
             </div>
 
             <!-- Password Field (Visible, Optional, Add/Update) -->

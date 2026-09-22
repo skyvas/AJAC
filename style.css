@@ -789,6 +789,26 @@ body.theme-light .moon-icon { display: block; }
   text-decoration: underline;
 }
 
+.meta-link-prep {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.16), rgba(139, 92, 246, 0.16));
+  color: #818cf8 !important;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none !important;
+}
+
+.meta-link-prep:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.32), rgba(139, 92, 246, 0.32));
+  color: #ffffff !important;
+  border-color: rgba(167, 139, 250, 0.7);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  text-decoration: none !important;
+}
+
 /* ==========================================================================
    Card Password Field Styles (Visible, Optional, Add/Update)
    ========================================================================== */
