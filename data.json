@@ -1,5 +1,51 @@
 [
   {
+    "slug": "nest-veterinary-qa-software-engineer",
+    "company": "Nest Veterinary",
+    "title": "Nest Veterinary",
+    "location": "Remote (US or Canada)",
+    "date": "2026-09-23",
+    "source_url": "https://jobs.ashbyhq.com/nestveterinary/a09351cf-49dd-4008-be1b-86567a8935ed",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
+    "slug": "fortinet-infrastructure-qa-specialist",
+    "company": "Fortinet",
+    "title": "Fortinet",
+    "location": "Burnaby, BC (4190 Still Creek Drive \u2014 Hybrid / On-site)",
+    "date": "2026-09-23",
+    "source_url": "https://www.fortinet.com/corporate/careers?job=infrastructure-qa-specialist-burnaby",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
     "slug": "kabam-qa-automation-engineer",
     "company": "Kabam",
     "title": "QA Automation Engineer",
