@@ -1,5 +1,28 @@
 [
   {
+    "slug": "prenuvo-senior-qa-engineer-ii",
+    "company": "Prenuvo",
+    "title": "Senior QA Engineer II",
+    "location": "Remote (Preference for Pacific Time Zone / PST hours)",
+    "date": "2026-09-24",
+    "source_url": "https://app.careerpuck.com/job-board/prenuvo/job/4736047005",
+    "status": "applied",
+    "response_status": "no_answer",
+    "updated_at": "2026-09-24T16:21:06.785480Z",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
     "slug": "ignite-technical-resources-senior-qa-automation-engineer",
     "company": "Ignite Technical Resources",
     "title": "Senior QA Automation Engineer",
@@ -32,29 +55,6 @@
     "status": "not_applied",
     "response_status": null,
     "updated_at": "",
-    "notes": "",
-    "password": "",
-    "files": [
-      "AVashista_resume.docx",
-      "AVashista_cover_letter.pdf",
-      "job_posting.md",
-      "fit_evaluation.md",
-      "cover_letter.yaml",
-      "resume.yaml",
-      "AVashista_cover_letter.docx",
-      "AVashista_resume.pdf"
-    ]
-  },
-  {
-    "slug": "prenuvo-senior-qa-engineer-ii",
-    "company": "Prenuvo",
-    "title": "Senior QA Engineer II",
-    "location": "Remote (Preference for Pacific Time Zone / PST hours)",
-    "date": "2026-09-23",
-    "source_url": "https://app.careerpuck.com/job-board/prenuvo/job/4736047005",
-    "status": "applied",
-    "response_status": "no_answer",
-    "updated_at": "2026-09-24T16:21:06.785480Z",
     "notes": "",
     "password": "",
     "files": [
@@ -729,9 +729,11 @@
     "notes": "",
     "password": "jitmew-kusnod-0bYhgy",
     "files": [
+      "interview_prep.html",
       "AVashista_resume.docx",
       "AVashista_cover_letter.pdf",
       "job_posting.md",
+      "interview_prep.md",
       "fit_evaluation.md",
       "cover_letter.yaml",
       "resume.yaml",
@@ -2234,8 +2236,8 @@
     "date": "2026-08-25",
     "source_url": "https://jobs.ashbyhq.com/absorb",
     "status": "applied",
-    "response_status": "no_answer",
-    "updated_at": "2026-09-10T08:01:46.098495Z",
+    "response_status": "rejected",
+    "updated_at": "2026-09-24T17:36:06.068260Z",
     "notes": "",
     "password": "",
     "files": [
