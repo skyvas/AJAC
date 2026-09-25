@@ -23,6 +23,98 @@
     ]
   },
   {
+    "slug": "covet-qa-lead",
+    "company": "CoVet",
+    "title": "QA Lead",
+    "location": "Remote (Canada / Toronto, Canada)",
+    "date": "2026-09-25",
+    "source_url": "https://ats.rippling.com/en-CA/covetcareers/jobs/3c3fb2f8-5ba0-45f4-809a-a92ef883b8ea",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
+    "slug": "corinex-quality-assurance-developer",
+    "company": "Corinex",
+    "title": "Quality Assurance Developer",
+    "location": "Vancouver, BC",
+    "date": "2026-09-25",
+    "source_url": "https://www.linkedin.com/jobs/view/4424900854/",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
+    "slug": "bcsc-quality-assurance-analyst",
+    "company": "British Columbia Securities Commission (BCSC)",
+    "title": "Quality Assurance Analyst",
+    "location": "Vancouver, BC (Downtown Vancouver, Hybrid Work Model)",
+    "date": "2026-09-25",
+    "source_url": "https://tre.tbe.taleo.net/tre01/ats/careers/v2/viewRequisition?org=BCSC&cws=38&rid=595",
+    "status": "not_applied",
+    "response_status": null,
+    "updated_at": "",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
+    "slug": "bcaa-senior-quality-assurance-engineer",
+    "company": "BCAA (British Columbia Automobile Association)",
+    "title": "BCAA",
+    "location": "Burnaby, BC (Head Office, Hybrid: 3 days onsite / 2 days remote)",
+    "date": "2026-09-25",
+    "source_url": "https://ca.linkedin.com/jobs/view/4461402997/",
+    "status": "applied",
+    "response_status": "no_answer",
+    "updated_at": "2026-09-10T20:06:08.009672Z",
+    "notes": "",
+    "password": "",
+    "files": [
+      "AVashista_resume.docx",
+      "AVashista_cover_letter.pdf",
+      "job_posting.md",
+      "fit_evaluation.md",
+      "cover_letter.yaml",
+      "resume.yaml",
+      "AVashista_cover_letter.docx",
+      "AVashista_resume.pdf"
+    ]
+  },
+  {
     "slug": "prenuvo-senior-qa-engineer-ii",
     "company": "Prenuvo",
     "title": "Senior QA Engineer II",
@@ -1166,29 +1258,6 @@
     "status": "did_not_apply",
     "response_status": null,
     "updated_at": "2026-09-10T20:06:16.125896Z",
-    "notes": "",
-    "password": "",
-    "files": [
-      "AVashista_resume.docx",
-      "AVashista_cover_letter.pdf",
-      "job_posting.md",
-      "fit_evaluation.md",
-      "cover_letter.yaml",
-      "resume.yaml",
-      "AVashista_cover_letter.docx",
-      "AVashista_resume.pdf"
-    ]
-  },
-  {
-    "slug": "bcaa-senior-quality-assurance-engineer",
-    "company": "BCAA (British Columbia Automobile Association)",
-    "title": "BCAA",
-    "location": "Burnaby, BC (Head Office, Hybrid: 3 days onsite / 2 days remote)",
-    "date": "2026-09-10",
-    "source_url": "https://ca.linkedin.com/jobs/view/4461402997/",
-    "status": "applied",
-    "response_status": "no_answer",
-    "updated_at": "2026-09-10T20:06:08.009672Z",
     "notes": "",
     "password": "",
     "files": [
